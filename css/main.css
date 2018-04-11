@@ -728,23 +728,33 @@ header.headerCont h1 {
   display: inline;
   padding: 15px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
-/* line 36, ../sass/header/_header.scss */
+/* line 37, ../sass/header/_header.scss */
+.element_add_menu {
+  display: none;
+  padding: 15px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* line 45, ../sass/header/_header.scss */
 .imgMedal {
   display: inline-block;
   margin-left: 4%;
 }
 
-/* line 42, ../sass/header/_header.scss */
+/* line 51, ../sass/header/_header.scss */
 .imgProfile {
   cursor: pointer;
   position: fixed;
   top: 2%;
   left: 90%;
+  cursor: pointer;
 }
 
-/* line 50, ../sass/header/_header.scss */
+/* line 60, ../sass/header/_header.scss */
 .imgMenu {
   display: none;
   cursor: pointer;
@@ -783,14 +793,15 @@ main.mainCont {
   /* line 9, ../sass/header/_media_630.scss */
   .imgMenu {
     display: inline-block;
+    cursor: pointer;
   }
 
-  /* line 13, ../sass/header/_media_630.scss */
+  /* line 14, ../sass/header/_media_630.scss */
   .imgProfile {
     display: none;
   }
 
-  /* line 17, ../sass/header/_media_630.scss */
+  /* line 18, ../sass/header/_media_630.scss */
   .titulo {
     font-size: 35px;
     margin-left: 3%;
@@ -798,8 +809,18 @@ main.mainCont {
     margin-top: 3%;
   }
 
-  /* line 24, ../sass/header/_media_630.scss */
+  /* line 25, ../sass/header/_media_630.scss */
   .menu {
-    display: none;
+    display: block;
+  }
+
+  /* line 29, ../sass/header/_media_630.scss */
+  .element_menu {
+    display: block;
+  }
+
+  /* line 33, ../sass/header/_media_630.scss */
+  .element_add_menu {
+    display: block;
   }
 }

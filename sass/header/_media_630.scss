@@ -8,6 +8,7 @@ header.headerCont h1{
 
 .imgMenu{
     display: inline-block;
+    cursor: pointer;
 }
 
 .imgProfile{
@@ -22,5 +23,13 @@ header.headerCont h1{
 }
 
 .menu{
-    display: none;
+    display:block;
+}
+
+.element_menu{
+    display: block;
+}
+
+.element_add_menu{
+    display: block;
 }
