@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>ReservasUPB</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,16 +14,16 @@
 	<!-- <link rel="icon" href="img/favicon.png"> -->
 </head>
 
-<body>
-	
+<body class="bodyCont">
+
 	<main class="mainCont">
 
-		<header class="headerCont"> 
+		<header class="headerCont">
 			<div class="imgMenu"></div>
 			<div class="imgMedal"></div>
 			<div class="titulo">ReservasUPB</div>
-				
-			<div class = "menu">
+
+			<div class="menu">
 				<a class="element_menu">Inicio</a>
 				<a class="element_menu">Escenarios</a>
 				<a class="element_menu">Deportes</a>
@@ -36,9 +36,31 @@
 			<div class="imgProfile"></div>
 		</header>
 
+		<section class="userAuth" id="loginCont">
+			<div>
+				<label class="fontSize30">Iniciar Sesión</label>
+				<input type="text" name="user" id="userLogin" placeholder="Correo Electronico">
+				<input type="password" name="password" id="passwordLogin" placeholder="Contraseña">
+				<button type="button" class="primary">Ingresar</button>
+				<button type="button" class="link" id="crearCuenta">Registrar Cuenta</button>
+			</div>
+		</section>
+		<section class="userAuth hidden" id="registerCont">
+			<div>
+				<label class="fontSize30">Registrarse</label>
+				<input type="text" name="user" id="userRegistro" placeholder="Correo Electronico">
+				<input type="text" name="password" id="passwordRegistro" placeholder="Contraseña">
+				<button type="button" class="primary">Registrar</button>
+				<button type="button" class="link" id="iniciarSesion">Iniciar Sesión</button>
+			</div>
+		</section>
+
 	</main>
 
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script src="/__/firebase/4.9.0/firebase-auth.js"></script>
 	<script src="js/main.js"></script>
+
 
 </body>
 

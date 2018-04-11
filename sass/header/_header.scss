@@ -51,7 +51,7 @@ margin-left: 2%;
 .imgProfile{
   @extend .sprite_1-profile;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   top: 2%;
   left: 90%;
   cursor: pointer;
