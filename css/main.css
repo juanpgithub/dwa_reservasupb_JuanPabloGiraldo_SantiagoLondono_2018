@@ -1,0 +1,1236 @@
+/*------------------------- Reset estilos y normalize --------------------*/
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 13, ../sass/com/general/_reset_estilos.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 22, ../sass/com/general/_reset_estilos.scss */
+body, html {
+  font-size: 1em;
+  line-height: 1.4;
+  height: 100%;
+  /* Permite centrar elementos con display table */
+  width: 100%;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 36, ../sass/com/general/_reset_estilos.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 41, ../sass/com/general/_reset_estilos.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 50, ../sass/com/general/_reset_estilos.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 64, ../sass/com/general/_reset_estilos.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 75, ../sass/com/general/_reset_estilos.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 85, ../sass/com/general/_reset_estilos.scss */
+textarea {
+  resize: vertical;
+}
+
+/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 11, ../sass/com/general/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 30, ../sass/com/general/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 43, ../sass/com/general/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 53, ../sass/com/general/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 68, ../sass/com/general/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 79, ../sass/com/general/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+/* line 91, ../sass/com/general/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 103, ../sass/com/general/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 111, ../sass/com/general/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+/* line 126, ../sass/com/general/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 131, ../sass/com/general/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 136, ../sass/com/general/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 141, ../sass/com/general/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 146, ../sass/com/general/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 151, ../sass/com/general/_normalize.scss */
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+/* line 160, ../sass/com/general/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+/* line 168, ../sass/com/general/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 173, ../sass/com/general/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 181, ../sass/com/general/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+/* line 190, ../sass/com/general/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+/* line 200, ../sass/com/general/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 209, ../sass/com/general/_normalize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 218, ../sass/com/general/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 231, ../sass/com/general/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+/* line 241, ../sass/com/general/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+/* line 249, ../sass/com/general/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 259, ../sass/com/general/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 267, ../sass/com/general/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 275, ../sass/com/general/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 279, ../sass/com/general/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 291, ../sass/com/general/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 298, ../sass/com/general/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+/* line 306, ../sass/com/general/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+/* line 316, ../sass/com/general/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+/* line 331, ../sass/com/general/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 340, ../sass/com/general/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 352, ../sass/com/general/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+/* line 364, ../sass/com/general/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 372, ../sass/com/general/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+/* line 384, ../sass/com/general/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+/* line 398, ../sass/com/general/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 413, ../sass/com/general/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 425, ../sass/com/general/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 440, ../sass/com/general/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 453, ../sass/com/general/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 465, ../sass/com/general/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 479, ../sass/com/general/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 491, ../sass/com/general/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+/* line 500, ../sass/com/general/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 511, ../sass/com/general/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 524, ../sass/com/general/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------------- External features --------------------*/
+/*------------------------- Variables --------------------*/
+/*------------------------- Amor y amistad --------------------*/
+/*------------------------- Amor y amistad --------------------*/
+/* line 72, sprites/sprite_1/*.png */
+.sprite_1-sprite, .sprite_1-favicon, .sprite_1-medal, .imgMedal, .sprite_1-menu, .imgMenu, .sprite_1-profile, .imgProfile {
+  background-image: url('../img/sprites/sprite_1-s258f7055af.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.sprite_1-favicon {
+  background-position: 0 0;
+  height: 16px;
+  width: 16px;
+}
+
+/* line 84, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.sprite_1-medal, .imgMedal {
+  background-position: -16px 0;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 84, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.sprite_1-menu, .imgMenu {
+  background-position: 0 -96px;
+  height: 64px;
+  width: 64px;
+}
+
+/* line 84, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.sprite_1-profile, .imgProfile {
+  background-position: 0 -32px;
+  height: 64px;
+  width: 64px;
+}
+
+/*------------------------- Internal features --------------------*/
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize1 {
+  font-size: 1px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize2 {
+  font-size: 2px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize3 {
+  font-size: 3px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize4 {
+  font-size: 4px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize5 {
+  font-size: 5px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize6 {
+  font-size: 6px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize7 {
+  font-size: 7px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize8 {
+  font-size: 8px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize9 {
+  font-size: 9px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize10 {
+  font-size: 10px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize11 {
+  font-size: 11px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize12 {
+  font-size: 12px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize13 {
+  font-size: 13px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize14 {
+  font-size: 14px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize15 {
+  font-size: 15px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize16 {
+  font-size: 16px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize17 {
+  font-size: 17px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize18 {
+  font-size: 18px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize19 {
+  font-size: 19px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize20 {
+  font-size: 20px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize21 {
+  font-size: 21px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize22 {
+  font-size: 22px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize23 {
+  font-size: 23px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize24 {
+  font-size: 24px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize25 {
+  font-size: 25px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize26 {
+  font-size: 26px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize27 {
+  font-size: 27px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize28 {
+  font-size: 28px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize29 {
+  font-size: 29px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize30 {
+  font-size: 30px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize31 {
+  font-size: 31px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize32 {
+  font-size: 32px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize33 {
+  font-size: 33px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize34 {
+  font-size: 34px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize35 {
+  font-size: 35px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize36 {
+  font-size: 36px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize37 {
+  font-size: 37px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize38 {
+  font-size: 38px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize39 {
+  font-size: 39px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize40 {
+  font-size: 40px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize41 {
+  font-size: 41px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize42 {
+  font-size: 42px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize43 {
+  font-size: 43px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize44 {
+  font-size: 44px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize45 {
+  font-size: 45px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize46 {
+  font-size: 46px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize47 {
+  font-size: 47px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize48 {
+  font-size: 48px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize49 {
+  font-size: 49px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize50 {
+  font-size: 50px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize51 {
+  font-size: 51px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize52 {
+  font-size: 52px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize53 {
+  font-size: 53px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize54 {
+  font-size: 54px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize55 {
+  font-size: 55px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize56 {
+  font-size: 56px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize57 {
+  font-size: 57px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize58 {
+  font-size: 58px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize59 {
+  font-size: 59px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize60 {
+  font-size: 60px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize61 {
+  font-size: 61px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize62 {
+  font-size: 62px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize63 {
+  font-size: 63px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize64 {
+  font-size: 64px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize65 {
+  font-size: 65px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize66 {
+  font-size: 66px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize67 {
+  font-size: 67px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize68 {
+  font-size: 68px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize69 {
+  font-size: 69px;
+}
+
+/* line 3, ../sass/com/general/_utilidades.scss */
+.fontSize70 {
+  font-size: 70px;
+}
+
+@font-face {
+  font-family: "HeroRegular";
+  src: url("../fonts/hero-regular/hero-regular.eot");
+  src: url("../fonts/hero-regular/hero-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/hero-regular/hero-regular.woff") format("woff"), url("../fonts/hero-regular/hero-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Amatic";
+  src: url("../fonts/amatic-bold-webfont/amatic-bold-webfont.eot");
+  src: url("../fonts/amatic-bold-webfont/amatic-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/amatic-bold-webfont/amatic-bold-webfont.woff") format("woff"), url("../fonts/amatic-bold-webfont/amatic-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, ../sass/header/_header.scss */
+header.headerCont {
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+  background: black;
+  background: -moz-linear-gradient(45deg, #6d0707 0%, #ff0026 100%);
+  background: -webkit-linear-gradient(45deg, #6d0707 0%, #ff0026 100%);
+  background: linear-gradient(45deg, #6d0707 0%, #ff0026 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#009ec3',GradientType=1 );
+}
+
+/* line 13, ../sass/header/_header.scss */
+header.headerCont h1 {
+  margin: 0px;
+  width: 100%;
+}
+
+/* line 18, ../sass/header/_header.scss */
+.titulo {
+  display: inline-block;
+  font-size: 50px;
+  margin-left: 2%;
+}
+
+/* line 24, ../sass/header/_header.scss */
+.menu {
+  display: inline-block;
+  font-size: 23px;
+  margin-left: 15%;
+}
+
+/* line 30, ../sass/header/_header.scss */
+.element_menu {
+  display: inline;
+  padding: 15px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* line 37, ../sass/header/_header.scss */
+.element_add_menu {
+  display: none;
+  padding: 15px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* line 45, ../sass/header/_header.scss */
+.imgMedal {
+  display: inline-block;
+  margin-left: 4%;
+}
+
+/* line 51, ../sass/header/_header.scss */
+.imgProfile {
+  cursor: pointer;
+  position: absolute;
+  top: 2%;
+  left: 90%;
+  cursor: pointer;
+}
+
+/* line 60, ../sass/header/_header.scss */
+.imgMenu {
+  display: none;
+  cursor: pointer;
+}
+
+/* line 2, ../sass/menu/_menu.scss */
+ul.listaCont {
+  font-family: 'Amatic';
+  font-size: 35px;
+}
+/* line 6, ../sass/menu/_menu.scss */
+ul.listaCont li {
+  color: blue;
+}
+
+/* line 1, ../sass/auth/_auth.scss */
+.userAuth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+}
+/* line 8, ../sass/auth/_auth.scss */
+.userAuth div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 13, ../sass/auth/_auth.scss */
+.userAuth div input {
+  margin: 2%;
+  height: 40px;
+  padding-left: 20px;
+}
+/* line 19, ../sass/auth/_auth.scss */
+.userAuth .primary {
+  background-color: red;
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+  padding: 5px;
+}
+/* line 26, ../sass/auth/_auth.scss */
+.userAuth .primary:hover {
+  opacity: .6;
+}
+
+/* line 2, ../sass/_generales.scss */
+main.mainCont {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'HeroRegular';
+}
+
+/* line 9, ../sass/_generales.scss */
+.bodyCont {
+  background-color: #e6e4e4;
+}
+
+/* line 13, ../sass/_generales.scss */
+.hidden {
+  display: none;
+}
+
+/* line 17, ../sass/_generales.scss */
+.link {
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: 400;
+  color: #337ab7;
+  border-radius: 0;
+}
+
+/* line 25, ../sass/_generales.scss */
+.link:hover {
+  color: #23527c;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 630px) {
+  /* line 1, ../sass/header/_media_630.scss */
+  header.headerCont h1 {
+    text-align: center;
+  }
+
+  /* line 5, ../sass/header/_media_630.scss */
+  .imgMedal {
+    display: none;
+  }
+
+  /* line 9, ../sass/header/_media_630.scss */
+  .imgMenu {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* line 14, ../sass/header/_media_630.scss */
+  .imgProfile {
+    display: none;
+  }
+
+  /* line 18, ../sass/header/_media_630.scss */
+  .titulo {
+    font-size: 35px;
+    margin-left: 3%;
+    vertical-align: top;
+    margin-top: 3%;
+  }
+
+  /* line 25, ../sass/header/_media_630.scss */
+  .menu {
+    display: block;
+  }
+
+  /* line 29, ../sass/header/_media_630.scss */
+  .element_menu {
+    display: block;
+  }
+
+  /* line 34, ../sass/header/_media_630.scss */
+  .element_add_menu {
+    display: block;
+  }
+}
