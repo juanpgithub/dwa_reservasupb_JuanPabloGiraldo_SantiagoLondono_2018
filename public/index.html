@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ReservasUPB</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--.....................................-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--.....................................-->
+
+</head>
+
+<body class="bodyCont">
+
+  <main class="mainCont">
+
+    <header class="headerCont">
+      <div class="imgMenu"></div>
+      <div class="imgMedal"></div>
+      <div class="titulo">ReservasUPB</div>
+
+      <div class="menu">
+        <a class="element_menu">Inicio</a>
+        <a class="element_menu">Escenarios</a>
+        <a class="element_menu">Deportes</a>
+        <a class="element_menu">Contacto</a>
+        <a class="element_add_menu">Login</a>
+        <a class="element_add_menu">Cerrar Seción</a>
+        <a class="element_add_menu">Mis Reservas</a>
+      </div>
+
+      <div class="imgProfile"></div>
+    </header>
+
+    <section class="userAuth" id="loginCont">
+      <form id="frmLogin" target="iframe">
+        <div>
+          <label class="fontSize30">Iniciar Sesión</label>
+          <input type="text" name="user" id="emailLogin" placeholder="Correo Electronico">
+          <input type="password" name="password" id="passwordLogin" placeholder="Contraseña">
+          <button type="submit" class="primary">Ingresar</button>
+          <button type="button" class="link" id="crearCuenta">Registrar Cuenta</button>
+        </div>
+      </form>
+    </section>
+    <section class="userAuth hidden" id="registerCont">
+      <form id="frmRegister" target="iframe">
+        <div>
+          <label class="fontSize30">Registrarse</label>
+          <input type="email" name="user" id="emailRegistro" placeholder="Correo Electronico">
+          <input type="text" name="password" id="passwordRegistro" placeholder="Contraseña">
+          <button type="submit" class="primary">Registrar</button>
+          <button type="button" class="link" id="iniciarSesion">Iniciar Sesión</button>
+        </div>
+      </form>
+    </section>
+    <iframe name="iframe" class="hidden"></iframe>
+  </main>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <!-- update the version number as needed -->
+  <script src="/__/firebase/4.12.1/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script src="/__/firebase/4.12.1/firebase-auth.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

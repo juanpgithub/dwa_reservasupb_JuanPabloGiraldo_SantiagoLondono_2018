@@ -1,0 +1,26 @@
+
+
+// Definition of the function
+@mixin newFont($fontFamily, $fileName) {
+  
+  $path: '../fonts/' + $fileName+ '/'+ $fileName;
+  
+  @font-face {
+      font-family: $fontFamily;
+      src: url( $path + '.eot');
+      src: url( $path + '.eot?#iefix') format('embedded-opentype'),
+          url( $path + '.woff') format('woff'),
+          url( $path + '.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+}
+
+
+// Function call
+@include newFont('HeroRegular', 'hero-regular');
+
+@include newFont('Amatic', 'amatic-bold-webfont');
+
+
