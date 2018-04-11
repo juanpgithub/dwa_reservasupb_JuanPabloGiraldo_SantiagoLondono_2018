@@ -25,17 +25,17 @@
       <div class="menu">
         <a class="element_menu" id="btsec_inicio">Inicio</a>
         <a class="element_menu" id="btsec_espacios">Escenarios</a>
-        <a class="element_menu">Deportes</a>
-        <a class="element_menu">Contacto</a>
-        <a class="element_add_menu">Login</a>
-        <a class="element_add_menu">Cerrar Seción</a>
-        <a class="element_add_menu">Mis Reservas</a>
+        <a class="element_menu" id="btsec_deportes">Deportes</a>
+        <a class="element_menu" id="btsec_contacto">Contacto</a>
+        <a class="element_add_menu" id="btsec_login">Login</a>
+        <a class="element_add_menu" id="btsec_cerrar_Secion">Cerrar Seción</a>
+        <a class="element_add_menu" id="btsec_mis_reservas">Mis Reservas</a>
       </div>
 
-      <div class="imgProfile"></div>
+      <div class="imgProfile" id="btsec_login_menu"></div>
     </header>
 
-    <section class="userAuth" id="loginCont">
+    <section class="hidden" id="loginCont">
       <form id="frmLogin" target="iframe">
         <div>
           <label class="fontSize30">Iniciar Sesión</label>
@@ -46,7 +46,8 @@
         </div>
       </form>
     </section>
-    <section class="userAuth hidden" id="registerCont">
+
+    <section class="hidden" id="registerCont">
       <form id="frmRegister" target="iframe">
         <div>
           <label class="fontSize30">Registrarse</label>
@@ -59,12 +60,22 @@
     </section>
 
     <section class="inicioSec" id="inicioCont">
-			<p>inicio</p>
+			<p>Inicio</p>
 		</section>
 
-		<section class="espaciosSec" id="espaciosCont">
+		<section class="hidden" id="espaciosCont">
 			<p>Espacios</p>
-		</section>
+    </section>
+    
+    <section class="hidden" id="deportesCont">
+			<p>Deportes</p>
+    </section>
+    
+    <section class="hidden" id="contactoCont">
+			<p>Contacto</p>
+    </section>
+    
+
 
     <iframe name="iframe" class="hidden"></iframe>
   </main>

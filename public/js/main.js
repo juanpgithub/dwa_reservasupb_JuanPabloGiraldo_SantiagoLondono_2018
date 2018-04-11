@@ -1,11 +1,17 @@
 
 window.onload = init;
 
-var secccioInicio;
+var seccionInicio;
 var seccionEspacios;
+var seccionDeportes;
+var seccionContacto;
+var seccionActual;
 
 var btsec_inicio;
 var btsec_espacios;
+var btsec_deportes;
+var btsec_contacto;
+var btsec_login_menu;
 
 function init() {
     inicializarVariables();
@@ -30,11 +36,17 @@ function inicializarVariables() {
     formLogin = document.getElementById("frmLogin");
     formRegister = document.getElementById("frmRegister");
 
-    secccionInicio = document.getElementById("inicioCont");
-    secccionEspacios = document.getElementById("espaciosCont");
+    seccionInicio = document.getElementById("inicioCont");
+    seccionEspacios = document.getElementById("espaciosCont");
+    seccionDeportes = document.getElementById("deportesCont");
+    seccionContacto = document.getElementById("contactoCont");
+    seccionActual = seccionInicio;
 
     btsec_inicio = document.getElementById("btsec_inicio");
     btsec_espacios = document.getElementById("btsec_espacios");
+    btsec_deportes = document.getElementById("btsec_deportes");
+    btsec_contacto = document.getElementById("btsec_contacto");
+    btsec_login_menu = document.getElementById("btsec_login_menu");
 }
 
 
@@ -46,8 +58,12 @@ function inicializarFunciones() {
     iniciarSesion.addEventListener("click", loginUsuario);
     formLogin.addEventListener("submit", logearUsuario);
     formRegister.addEventListener("submit", crearUsuario);
+
     btsec_inicio.addEventListener("click",procesarClickInicio);
     btsec_espacios.addEventListener("click",procesarClickEspacios);
+    btsec_deportes.addEventListener("click",procesarClickDeportes);
+    btsec_contacto.addEventListener("click",procesarClickContacto);
+    btsec_login_menu.addEventListener("click",procesarClickLogin);
 }
 
 function logearUsuario() {
@@ -115,9 +131,35 @@ function loginUsuario() {
 
 
 function procesarClickInicio(evt){
-    secccionEspacios.className = "hidden";
+    seccionActual.className = "hidden";
+    seccionInicio.className = "";
+    seccionActual = seccionInicio;
 }
 
 function procesarClickEspacios(evt){
-    secccionInicio.className = "hidden";
+    seccionActual.className = "hidden";
+    seccionEspacios.className = "";
+    seccionActual = seccionEspacios;
+}
+
+function procesarClickDeportes(evt){
+    seccionActual.className = "hidden";
+    seccionDeportes.className = "";
+    seccionActual = seccionDeportes;
+}
+
+function procesarClickContacto(evt){
+    seccionActual.className = "hidden";
+    seccionContacto.className = "";
+    seccionActual = seccionContacto;
+    // seccionActual.className = "hidden";
+    // seccionLogin.className = "";
+    // seccionActual = seccionLogin;
+}
+
+function procesarClickLogin(evt){
+    console.log("entre");
+    seccionActual.className = "hidden";
+    seccionLogin.className = "userAuth";
+    seccionActual = seccionLogin;
 }
