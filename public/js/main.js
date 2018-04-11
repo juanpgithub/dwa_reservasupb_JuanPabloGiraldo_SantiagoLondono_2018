@@ -1,6 +1,12 @@
 
 window.onload = init;
 
+var secccioInicio;
+var seccionEspacios;
+
+var btsec_inicio;
+var btsec_espacios;
+
 function init() {
     inicializarVariables();
     inicializarFunciones();
@@ -23,7 +29,14 @@ function inicializarVariables() {
     seccionLogin = document.getElementById("loginCont");
     formLogin = document.getElementById("frmLogin");
     formRegister = document.getElementById("frmRegister");
+
+    secccionInicio = document.getElementById("inicioCont");
+    secccionEspacios = document.getElementById("espaciosCont");
+
+    btsec_inicio = document.getElementById("btsec_inicio");
+    btsec_espacios = document.getElementById("btsec_espacios");
 }
+
 
 function inicializarFunciones() {
     if (!firebase.apps.length) {
@@ -32,7 +45,9 @@ function inicializarFunciones() {
     crearCuenta.addEventListener("click", registrarCuenta);
     iniciarSesion.addEventListener("click", loginUsuario);
     formLogin.addEventListener("submit", logearUsuario);
-    formRegister.addEventListener("submit", crearUsuario)
+    formRegister.addEventListener("submit", crearUsuario);
+    btsec_inicio.addEventListener("click",procesarClickInicio);
+    btsec_espacios.addEventListener("click",procesarClickEspacios);
 }
 
 function logearUsuario() {
@@ -96,4 +111,13 @@ function loginUsuario() {
     seccionLogin.className = "userAuth";
     formRegister.reset();
     seccionRegistro.className = "userAuth hidden";
+}
+
+
+function procesarClickInicio(evt){
+    secccionEspacios.className = "hidden";
+}
+
+function procesarClickEspacios(evt){
+    secccionInicio.className = "hidden";
 }
