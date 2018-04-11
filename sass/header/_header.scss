@@ -22,9 +22,9 @@ margin-left: 2%;
 }
 
 .menu{
-display: inline-block;
-font-size: 23px;
-margin-left: 12%;
+  display: inline-block;
+  font-size: 23px;
+  margin-left: 15%;
 }
 
 .element_menu{
@@ -41,6 +41,14 @@ margin-left: 12%;
 
 .imgProfile{
   @extend .sprite_1-profile;
-  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  top: 2%;
+  left: 90%;
+}
+
+.imgMenu{
+  @extend .sprite_1-menu;
+  display: none;
   cursor: pointer;
 }
