@@ -760,6 +760,11 @@ header.headerCont h1 {
   cursor: pointer;
 }
 
+/* line 66, ../sass/header/_header.scss */
+.hidden {
+  display: none;
+}
+
 /* line 2, ../sass/menu/_menu.scss */
 ul.listaCont {
   font-family: 'Amatic';
