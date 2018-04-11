@@ -641,9 +641,9 @@ table {
 /*------------------------- Variables --------------------*/
 /*------------------------- Amor y amistad --------------------*/
 /*------------------------- Amor y amistad --------------------*/
-/* line 56, sprites/sprite_1/*.png */
-.sprite_1-sprite, .sprite_1-favicon, .sprite_1-medal, .imgMedal {
-  background-image: url('../img/sprites/sprite_1-sd633636547.png');
+/* line 64, sprites/sprite_1/*.png */
+.sprite_1-sprite, .sprite_1-favicon, .sprite_1-medal, .imgMedal, .sprite_1-profile, .imgProfile {
+  background-image: url('../img/sprites/sprite_1-s109d05f29d.png');
   background-repeat: no-repeat;
 }
 
@@ -656,9 +656,16 @@ table {
 
 /* line 84, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .sprite_1-medal, .imgMedal {
-  background-position: 0 -16px;
+  background-position: -16px 0;
   height: 32px;
   width: 32px;
+}
+
+/* line 84, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.sprite_1-profile, .imgProfile {
+  background-position: 0 -32px;
+  height: 64px;
+  width: 64px;
 }
 
 /*------------------------- Internal features --------------------*/
@@ -720,6 +727,12 @@ header.headerCont h1 {
 .imgMedal {
   display: inline-block;
   margin-left: 4%;
+}
+
+/* line 42, ../sass/header/_header.scss */
+.imgProfile {
+  display: inline-block;
+  cursor: pointer;
 }
 
 /* line 2, ../sass/menu/_menu.scss */

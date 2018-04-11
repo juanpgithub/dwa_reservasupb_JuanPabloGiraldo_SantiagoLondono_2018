@@ -38,3 +38,9 @@ margin-left: 12%;
   display: inline-block;
   margin-left: 4%;
 }
+
+.imgProfile{
+  @extend .sprite_1-profile;
+  display: inline-block;
+  cursor: pointer;
+}
