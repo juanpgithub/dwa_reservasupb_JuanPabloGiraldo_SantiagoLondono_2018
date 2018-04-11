@@ -1130,29 +1130,35 @@ ul.listaCont li {
   height: 80%;
 }
 /* line 8, ../sass/auth/_auth.scss */
+.userAuth form {
+  padding: 5%;
+  background-color: white;
+  border: 1px solid;
+}
+/* line 13, ../sass/auth/_auth.scss */
 .userAuth div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-/* line 13, ../sass/auth/_auth.scss */
+/* line 18, ../sass/auth/_auth.scss */
 .userAuth div input {
   margin: 3%;
   height: 40px;
   padding-left: 20px;
 }
-/* line 19, ../sass/auth/_auth.scss */
+/* line 24, ../sass/auth/_auth.scss */
 .userAuth .primary {
   background-color: red;
   color: #fff;
-  width: 100%;
+  width: 220px;
   display: inline-block;
   padding: 5px;
 }
-/* line 26, ../sass/auth/_auth.scss */
+/* line 31, ../sass/auth/_auth.scss */
 .userAuth .primary:hover {
-  opacity: .6;
+  opacity: .9;
 }
 
 /* line 2, ../sass/_generales.scss */
